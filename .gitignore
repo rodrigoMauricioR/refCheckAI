@@ -1,0 +1,33 @@
+# --- secrets ---
+.env
+.streamlit/secrets.toml
+
+# --- python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# --- editor / OS ---
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# --- runtime working dirs ---
+tmp/
+
+# --- generated cache artifacts (don't commit; the app or warm_cache.py rebuilds these) ---
+assets/cached_results/*
+!assets/cached_results/.gitkeep
+
+# --- demo media (don't commit videos to the repo; bring your own locally) ---
+assets/demo_clips/*
+!assets/demo_clips/.gitkeep
+
+# --- logs ---
+*.log
